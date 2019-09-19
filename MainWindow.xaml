@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OperacionesMatematicas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Operaciones Matemáticas" Height="321.2" Width="580.8" Icon="img/48.ico">
     <Grid>
-        
+        <GroupBox x:Name="groupBox" Header="Operaciones" HorizontalAlignment="Left" Height="145" VerticalAlignment="Top" Width="145" Margin="30,50,0,0"/>
+        <RadioButton x:Name="SumaRadioButton" Content="Suma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,85,0,0" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="DivisionRadioButton" Content="División" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,157,0,0" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="MultiplicacionRadioButton" Content="Multiplicación" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,132,0,0" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="RestaRadioButton" Content="Resta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,109,0,0" Checked="RadioButton_Checked"/>
+        <TextBox x:Name="Operando1TextBox" HorizontalAlignment="Left" Height="23" Margin="203,78,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextAlignment="Right" MaxLength="5" TextChanged="OperandoTextBox_TextChanged"/>
+        <TextBox x:Name="ResultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="424,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" IsEnabled="False" TextAlignment="Right"/>
+        <TextBox x:Name="Operando2TextBox" HorizontalAlignment="Left" Height="23" Margin="203,147,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextAlignment="Right" MaxLength="5" TextChanged="OperandoTextBox_TextChanged"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,233,0,0" Click="LimpiarButton_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top" Margin="203,59,0,0" Width="80"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="203,129,0,0" Width="80"><Run Text="Operando "/><Run Text="2"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="424,93,0,0" Width="80" Text="Resultado"/>
+
     </Grid>
 </Window>
