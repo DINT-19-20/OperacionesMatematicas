@@ -13,7 +13,7 @@
         <RadioButton x:Name="MultiplicacionRadioButton" Content="Multiplicación" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,132,0,0" Checked="RadioButton_Checked"/>
         <RadioButton x:Name="RestaRadioButton" Content="Resta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,109,0,0" Checked="RadioButton_Checked"/>
         <TextBox x:Name="Operando1TextBox" HorizontalAlignment="Left" Height="23" Margin="203,78,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextAlignment="Right" MaxLength="5" TextChanged="OperandoTextBox_TextChanged"/>
-        <TextBox x:Name="ResultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="424,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" IsEnabled="False" TextAlignment="Right"/>
+        <TextBox x:Name="ResultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="424,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" IsReadOnly="True" TextAlignment="Right"/>
         <TextBox x:Name="Operando2TextBox" HorizontalAlignment="Left" Height="23" Margin="203,147,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextAlignment="Right" MaxLength="5" TextChanged="OperandoTextBox_TextChanged"/>
         <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,233,0,0" Click="LimpiarButton_Click"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top" Margin="203,59,0,0" Width="80"/>
